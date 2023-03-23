@@ -14,41 +14,30 @@ corrmatrix[corrmatrix > 0.5 | corrmatrix < -0.5]
 library(corrplot)
 corrplot(cor(df), method="circle",tl.srt = 90)
 
-# 다중공선성 문제 해결을 위한 변수 제거
-df$FG <- NULL
-df$FGA <- NULL
-df$X3P <- NULL
-df$X3PA <- NULL
-df$X2P <- NULL
-df$X2PA <- NULL
-df$FT <- NULL
-df$FTA <- NULL
-df$TRB <- NULL
-df$pos_SG <- NULL
 
-model <- lm(inflationAdjSalary~.,data=df)
+model <- lm(salary~.,data=df)
 summary(model)
 
-model2 <- lm(inflationAdjSalary ~ Season + PTS + Age + DRB + G + AST, data = df)
+model2 <- lm(salary ~ Season + PTS + Age + DRB + G + AST, data = df)
 summary(model2)
-head(df)
 
-model3 <- lm(formula = inflationAdjSalary ~ Season, data=df)
+
+model3 <- lm(formula = salary ~ Season, data=df)
 summary(model3)
 
-model4 <- lm(formula = inflationAdjSalary ~ PTS, data=df)
+model4 <- lm(formula = salary ~ PTS, data=df)
 summary(model4)
 
-model5 <- lm(formula = inflationAdjSalary ~ Age, data=df)
+model5 <- lm(formula = salary ~ Age, data=df)
 summary(model5)
 
-model6 <- lm(formula = inflationAdjSalary ~ DRB, data=df)
+model6 <- lm(formula = salary ~ DRB, data=df)
 summary(model6)
 
-model7 <- lm(formula = inflationAdjSalary ~ G, data=df)
+model7 <- lm(formula = salary ~ G, data=df)
 summary(model7)
 
-model8 <- lm(formula = inflationAdjSalary ~ AST, data=df)
+model8 <- lm(formula = salary ~ AST, data=df)
 summary(model8)
 
 
