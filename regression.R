@@ -74,14 +74,21 @@ summary(model_4)
 model_5 <- lm(formula = salary ~ FG, data=df)
 summary(model_5)
 
+
 # 다중회귀분석
-model <- lm(salary~.,data=df)
+# R-squared값이 49%이며, 다중공선성이 의심됨.
+model <- lm(salary ~.,data=df)
 summary(model)
+cor(df, method='pearson') # 전체 변수간 다중공선성 파악
 
 # 회귀분석에 적합하며 높은 모형을 설명해주는 변수들만 선정
-# pvalue값이 0 인 변수들 선정
-# 결과는 R-squared값이 약40%이며 다중공선성 변수 제거후 영향을 미치는 변수들 분석함
-model2 <- lm(salary ~ Age + G + GS + FG. + X2P. + eFG. + FTA + ORB + DRB + AST + STL + BLK, data = df)
+# pvalue값이적당한 변수 및 다중공선성 변수제거
+# 결과는 R-squared값이 약48%로 약간 설명력이 떨어짐 하지만 유의성이 높아짐
+model2 <- lm(salary ~ Season + MP+ TOV + ORB + X3P+ FGA  + Age + G + GS + FG. + eFG. + FTA + AST + STL + BLK + DRB +  FTA , data = df)
 summary(model2)
+
+# 이중 연봉에 기여도가 높은 변수 추출 후 영향을 미치는 변수들로 분석
+model__ <- lm(salary ~ X3P + Age + GS + FG + FTA + AST + DRB + BLK, data = df)
+summary(model__)
 
 
