@@ -13,8 +13,12 @@
 </ul>
 
 ## :microscope: 수행절차 및 방법
+### 데이터 개요
 데이터 출처 : [kaggle.com](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data)
-
+### 데이터 전처리
+### 상관분석
+### 회귀분석
+### 모델분석
 
 ## :bar_chart: 결과물
 [PPT 발표자료](https://docs.google.com/presentation/d/1zm7ERAnbzVLzFRGdovSC0qN0e-pP-3u6laDKWe4dpZY/edit?usp=sharing)
