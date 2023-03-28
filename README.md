@@ -87,7 +87,7 @@
 ## :bar_chart: 결과물
 <img src="https://user-images.githubusercontent.com/121409511/228169963-119a9b25-f756-4a2e-a692-5185f371a7fd.png"/>
 
-[PPT 발표자료](https://docs.google.com/presentation/d/1zm7ERAnbzVLzFRGdovSC0qN0e-pP-3u6laDKWe4dpZY/edit?usp=sharing)
+더 자세한 결과물 : [발표자료](https://docs.google.com/presentation/d/1zm7ERAnbzVLzFRGdovSC0qN0e-pP-3u6laDKWe4dpZY/edit?usp=sharing)
 
 ## :seedling: 사용 언어
 <div align="left">
