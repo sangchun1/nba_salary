@@ -1,6 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=nba_salary&fontSize=50)
 
 ### :basketball: NBA 선수 기록과 연봉 데이터 분석 :basketball:
+<br>
 
 ## :bulb: 주제
 미국 프로농구 NBA 선수들의 연봉에 영향을 미치는 데이터를 분석하여 선수들의 기록이 연봉에 어떠한 영향을 주는지 분석하여 연봉이 예측 가능한 모델 생성
@@ -14,11 +15,13 @@
 
 ## :microscope: 수행절차 및 방법
 ### 데이터 개요
-데이터 출처 : [kaggle.com](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data)
+데이터 출처 : [kaggle.com/datasets/loganlauton/nba-players-and-team-data](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data)
+<br>
+<img src="https://user-images.githubusercontent.com/121409511/228159529-b407c801-bc2f-4384-828c-9533ad29b35a.png"/>
 ### 데이터 전처리
 ### 상관분석
 ### 회귀분석
-### 모델분석
+### 회귀분석 모형 비교 분석
 
 ## :bar_chart: 결과물
 [PPT 발표자료](https://docs.google.com/presentation/d/1zm7ERAnbzVLzFRGdovSC0qN0e-pP-3u6laDKWe4dpZY/edit?usp=sharing)
