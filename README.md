@@ -1,7 +1,6 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=nba_salary&fontSize=50)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=NBA%20선수%20기록과%20연봉%20데이터%20분석&fontSize=50)
 
-### :basketball: NBA 선수 기록과 연봉 데이터 분석 :basketball:
-<br>
+### :basketball: 수행기간 : 2023.03.16 ~ 2023.03.29
 
 ## :bulb: 주제
 미국 프로농구 NBA 선수들의 연봉에 영향을 미치는 데이터를 분석하여 선수들의 기록이 연봉에 어떠한 영향을 주는지 분석하여 연봉이 예측 가능한 모델 생성
@@ -61,9 +60,18 @@
  <ul><li>총 11926개의 데이터 건수와 33개의 변수( 독립변수(X) : 32, 종속변수(Y) : 1 )</li></ul>
 
 ### 상관분석
+ - 밀접한 상관관계를 갖고 있는 변수들 : <strong>PTS, FG, FGA, FTA, DRB</strong>
+ 
+ - <strong>귀무가설</strong> : 연봉과 다른 변수들 사이에 상관관계가 없다
+ - <strong>대립가설</strong> : 연봉과 다른 변수들 사이에 상관관계가 있다
+ - <strong>p-value = 0.000</strong>,  귀무가설을 기각하고 대립가설 채택
+ - <strong>결론 : 연봉과 다른 변수들 사이에 상관관계가 있다</strong>
+
 ### 회귀분석
+<img src="https://github.com/sangchun1/nba_salary/assets/121409511/55d5c5e1-9405-4b42-8492-33176b090fc6"/>
+
 ### 회귀분석 모형 비교 분석
-총 6개의 모형
+<strong>총 6개의 모형</strong>
 <ol>
   <li>Ordinary Least Squares(OLS)</li>
   <li>Linear Regression</li>
@@ -72,11 +80,29 @@
   <li>랜덤 포레스트(Random Forest)</li>
   <li>인공신경망(Artificial Neural Network)</li>
 </ol>
-다중공선성 의심으로 의존적인 변수들 제거
-<ul><li></li></ul>
-후진제거법으로 유의하지 않은 변수들 제거
-<ul><li></li></ul>
-분석 방법:
+<strong>다중공선성 의심으로 의존적인 변수들 제거</strong>
+<ul>
+  <li>FG</li>
+  <li>FGA</li>
+  <li>3P</li>
+  <li>3PA</li>
+  <li>2P</li>
+  <li>2PA</li>
+  <li>FT</li>
+  <li>FTA</li>
+  <li>TRB</li>
+</ul>
+<strong>후진제거법으로 유의하지 않은 변수들 제거</strong>
+<ul>
+  <li>GS</li>
+  <li>FG%</li>
+  <li>3P%</li>
+  <li>2P%</li>
+  <li>BLK</li>
+  <li>TOV</li>
+  <li>PF</li>
+</ul>
+<strong>분석 방법:</strong>
 <ol>
   <li>모델 테스트</li>
   <li>GridSearchCV 또는 RandomSearchCV로 최적의 파라미터 탐색</li>
@@ -95,7 +121,7 @@
   <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white"/>
 </div>
 
-## :open_file_folder: 사용 패키지
+## :open_file_folder: 사용 라이브러리
 <div align="left">
   <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white"/>
   <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white"/>
@@ -114,11 +140,6 @@
   <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white"/>
   <img src="https://img.shields.io/badge/RStudio-4285F4?style=flat-square&logo=rstudio&logoColor=white"/>
-</div>
-<div align="left">
-  <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=flat-square&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Microsoft Powerpoint-B7472A?style=flat-square&logo=microsoftpowerpoint&logoColor=white"/>
 </div>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=150&section=footer)
